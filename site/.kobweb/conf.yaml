@@ -1,0 +1,14 @@
+site:
+  title: "Dummy Kobweb Library For Jitpack"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/developmentExecutable/dummykobweblibraryforjitpack.js"
+      api: "build/libs/dummykobweblibraryforjitpack.jar"
+    prod:
+      script: "build/distributions/dummykobweblibraryforjitpack.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
