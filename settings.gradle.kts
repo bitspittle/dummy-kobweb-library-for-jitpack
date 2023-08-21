@@ -7,5 +7,3 @@ pluginManagement {
 }
 
 rootProject.name = "dummykobweblibraryforjitpack"
-
-include(":site")
