@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.jetbrains.compose)
     alias(libs.plugins.kobweb.library)
+    id("maven-publish")
 }
 
 group = "org.example.dummykobweblibraryforjitpack"
