@@ -1,25 +1,17 @@
-import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
+import com.varabyte.kobweb.gradle.library.util.configAsKobwebLibrary
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.jetbrains.compose)
-    alias(libs.plugins.kobweb.application)
-    // alias(libs.plugins.kobwebx.markdown)
+    alias(libs.plugins.kobweb.library)
 }
 
 group = "org.example.dummykobweblibraryforjitpack"
 version = "1.0-SNAPSHOT"
 
-kobweb {
-    app {
-        index {
-            description.set("Powered by Kobweb")
-        }
-    }
-}
 
 kotlin {
-    configAsKobwebApplication("dummykobweblibraryforjitpack")
+    configAsKobwebLibrary()
 
     @Suppress("UNUSED_VARIABLE") // Suppress spurious warnings about sourceset variables not being used
     sourceSets {
@@ -35,7 +27,6 @@ kotlin {
                 implementation(libs.kobweb.core)
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
-                // implementation(libs.kobwebx.markdown)
             }
         }
     }
