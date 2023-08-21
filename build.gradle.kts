@@ -37,5 +37,12 @@ kotlin {
                 implementation(npm("is-sorted", "1.0.5"))
             }
         }
+
+        val jsTest by getting {
+            dependencies {
+                implementation("com.varabyte.truthish:truthish:0.6.5")
+                implementation(kotlin("test-js"))
+            }
+        }
     }
 }
