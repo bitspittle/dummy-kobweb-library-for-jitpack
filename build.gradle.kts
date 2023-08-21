@@ -34,6 +34,7 @@ kotlin {
                 implementation(libs.kobweb.core)
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
+                implementation(npm("is-sorted", "1.0.5"))
             }
         }
     }
