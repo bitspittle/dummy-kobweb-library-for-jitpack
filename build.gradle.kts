@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "org.example.dummykobweblibraryforjitpack"
-version = "0.4"
+version = "0.5"
 
 repositories {
     mavenCentral()
@@ -35,6 +35,7 @@ kotlin {
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
                 implementation(npm("is-sorted", "1.0.5"))
+                implementation(npm("bootstrap", "5.3.1"))
             }
         }
 
